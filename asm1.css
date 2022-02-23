@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  font-family: "Fira Sans", sans-serif;
+}
+.hmenu {
+  list-style: none;
+  background-color: rgb(10, 77, 10);
+  text-align: center;
+}
+
+.hmenu > li {
+  display: inline-block;
+  margin: 0px 20px ;
+ 
+  position: relative;
+}
+.hmenu > li > a {
+  text-decoration: none;
+  font-size: 15pt;
+  color: white;
+  display: block;
+  padding: 10px;
+}
+.hmenu > li:hover > a {
+  background-color: #069219;
+  color: rgb(4, 14, 11);
+  font-weight: bold;
+}
+.hmenu > li:hover .smenu {
+  display: block;
+}
+.smenu {
+  list-style: none;
+
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 300px;
+  background-color: rgb(247, 247, 247);
+  padding: 10px 20px;
+  display: none;
+  z-index: 100;
+}
+.smenu > li {
+  display: block;
+  border-bottom: 1px solid rgb(15, 131, 21);
+}
+.smenu > li > a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: rgb(36, 33, 33);
+  display: block;
+  padding: 10px 5px;
+}
+.smenu > li:hover a {
+  background-color: rgb(10, 77, 10);
+  color: #fff;
+  font-weight: bold;
+}
+
+
+.news {
+  width: 80%;
+  margin: 0 auto;
+}
+.news h2:hover {
+  color: rgb(133, 129, 129);
+  cursor: pointer;
+}
+.new-item {
+  margin: 60px 0;
+}
+
+.dau {
+  height: 50px;
+  background-color: rgb(10, 77, 10);
+  position: relative;
+}
+.sreach {
+  position: absolute;
+  right: 18px;
+  top: 6px;
+}
+.sreach i {
+  font-size: 42px;
+}
+.hotline {
+  position: absolute;
+  right: 280px;
+  top: 15px;
+  font-size: 13pt;
+  font-weight: bold;
+  color: red;
+}
+.hotline p:hover {
+  color: white;
+}
+.heading {
+  font-size: 32px;
+  margin-top: 40px;
+  color: rgb(10, 77, 10);
+  letter-spacing: 1px;
+  text-align: center;
+}
+.lich {
+  font-size: 32px;
+  margin-top: 40px;
+  background-color: rgb(10, 77, 10);
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+}
+.envents {
+  width: 80%;
+  margin: 0 auto;
+}
+.event-item {
+  width: 20%;
+  float: left;
+  margin: 0 28px;
+  margin-top: 30px;
+}
+.event-item h3:hover {
+  color: rgb(134, 218, 134);
+  cursor: pointer;
+}
+
+.sign-up {
+  width: 28%;
+  margin: 0 auto;
+  background: rgb(51, 199, 64);
+  padding: 20px 10px;
+  margin-top: 20%;
+
+  border-radius: 20px;
+}
+.sign-up h3 {
+  color: white;
+  text-align: center;
+}
+.sign-up textarea,
+.sign-up input[type="text"] {
+  display: block;
+  padding: 10px 5px;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid rgb(62, 204, 230);
+}
+.sign-up button {
+  padding: 10px 15px;
+  background: rgb(32, 190, 190);
+  color: #fff;
+  font-weight: bold;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+footer {
+  margin-top: 20px;
+  width: 100%;
+  float: left;
+  height: 500px;
+  background: rgb(224, 228, 228);
+}
+.cuoi {
+  position: relative;
+}
+.logo {
+  width: 18%;
+  position: absolute;
+  left: 200px;
+  top: 90px;
+}
+.lienhe {
+  position: absolute;
+  font-size: 12pt;
+  
+  color: rgb(99, 97, 97);
+  top: 90px;
+  left: 51%;
+}
+.lienhe p:hover {
+  color: green;
+}
+.truong {
+  position: absolute;
+  left: 210px;
+  top: 180px;
+}
+.truong > p {
+  font-size: 11pt;
+
+  color: rgb(99, 97, 97);
+}
+.icon {
+  position: absolute;
+
+  left: 210px;
+  top: 230px;
+}
+.icon > i {
+  font-size: 50px;
+}
+
+input[type="text"] {
+  float: right;
+  padding: 7px;
+  margin-top: 8px;
+  margin-right: 54px;
+  border: none;
+  font-size: 17px;
+}
+
+button:hover {
+  background-color: rgb(8, 253, 200);
+  color: black;
+  cursor: progress;
+}
+.event-item img:hover {
+  box-shadow: 0 0 20px rgb(186, 192, 187);
+  cursor: pointer;
+}
+.content img:hover {
+  box-shadow: 0 0 20px rgb(186, 192, 187);
+  cursor: pointer;
+}
+
+.tulap {
+  text-align: center;
+  clear: left;
+}
+.tulap h1 {
+  color: rgb(10, 77, 10);
+  font-size: 35pt;
+  font-weight: bold;
+}
+.tulap > p {
+  font-size: 20pt;
+
+  color: grey;
+}
+.anh {
+  width: 15%;
+
+  margin-left: 160px;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+}
+.allytb {
+  width: 80%;
+  margin: 0 auto;
+}
+.youtube {
+  float: left;
+  margin: 0 6px;
+  margin-top: 30px;
+}
+
